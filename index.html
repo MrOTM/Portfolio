@@ -1,0 +1,208 @@
+<!DOCTYPE html><html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Othman Zaabi | Developer Portfolio</title>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet"><style>
+
+*{box-sizing:border-box;margin:0;padding:0}
+
+body{
+font-family:Poppins, sans-serif;
+background:#020617;
+color:white;
+line-height:1.6;
+}
+
+nav{
+position:fixed;
+top:0;
+width:100%;
+background:rgba(2,6,23,0.9);
+backdrop-filter:blur(10px);
+padding:15px 10%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+z-index:1000;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+margin-left:20px;
+font-size:14px;
+}
+
+.hero{
+height:100vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+padding:0 20px;
+background:linear-gradient(135deg,#020617,#0f172a,#1e3a8a);
+}
+
+.hero h1{
+font-family:Orbitron;
+font-size:56px;
+margin-bottom:10px;
+}
+
+.hero p{
+color:#94a3b8;
+max-width:600px;
+}
+
+.btn{
+margin-top:30px;
+padding:14px 28px;
+border-radius:10px;
+background:#38bdf8;
+color:black;
+font-weight:600;
+border:none;
+cursor:pointer;
+}
+
+section{
+padding:100px 10%;
+}
+
+.title{
+font-family:Orbitron;
+font-size:32px;
+margin-bottom:40px;
+color:#38bdf8;
+}
+
+.about{
+max-width:800px;
+}
+
+.skills{
+display:flex;
+flex-wrap:wrap;
+gap:10px;
+}
+
+.skill{
+background:#0f172a;
+padding:10px 18px;
+border-radius:8px;
+border:1px solid #1e293b;
+}
+
+.projects{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+gap:25px;
+}
+
+.card{
+background:#0f172a;
+padding:25px;
+border-radius:14px;
+border:1px solid #1e293b;
+transition:0.3s;
+}
+
+.card:hover{
+transform:translateY(-6px);
+border-color:#38bdf8;
+}
+
+.certificates{
+display:flex;
+flex-wrap:wrap;
+gap:20px;
+}
+
+.certificates img{
+width:260px;
+border-radius:12px;
+border:1px solid #1e293b;
+transition:0.3s;
+}
+
+.certificates img:hover{
+transform:scale(1.05);
+}
+
+.contact{
+max-width:600px;
+}
+
+footer{
+text-align:center;
+padding:40px;
+background:#020617;
+color:#94a3b8;
+border-top:1px solid #1e293b;
+}
+
+</style></head><body><nav>
+<div style="font-family:Orbitron">OZ</div>
+<div>
+<a href="#about">About</a>
+<a href="#skills">Skills</a>
+<a href="#projects">Projects</a>
+<a href="#certificates">Certificates</a>
+<a href="#contact">Contact</a>
+</div>
+</nav><div class="hero">
+<h1>Othman Zaabi</h1>
+<p>Freelance Developer • Competitive Programmer • Tech Content Creator from Tunisia. Passionate about technology, problem solving and building digital projects.</p>
+<button class="btn" onclick="scrollContact()">Work With Me</button>
+</div><section id="about">
+<div class="title">About Me</div>
+<p class="about">
+I am a young developer from Tunisia passionate about programming and technology. I participate in competitive programming events and coding competitions to improve my problem‑solving skills. My goal is to build real digital projects and work with clients around the world as a freelance developer.
+</p>
+</section><section id="skills">
+<div class="title">Skills</div>
+<div class="skills">
+<div class="skill">Programming</div>
+<div class="skill">Competitive Programming</div>
+<div class="skill">Problem Solving</div>
+<div class="skill">Video Editing</div>
+<div class="skill">Tech Content Creation</div>
+<div class="skill">Technology Research</div>
+</div>
+</section><section id="projects">
+<div class="title">Projects</div>
+<div class="projects"><div class="card">
+<h3>MTG Tech Page</h3>
+<p>Technology and programming media page sharing educational content.</p>
+</div><div class="card">
+<h3>Competitive Programming Training</h3>
+<p>Training through contests and algorithmic problem solving.</p>
+</div><div class="card">
+<h3>Freelance Digital Projects</h3>
+<p>Helping clients with tech content, editing and small programming tasks.</p>
+</div></div>
+</section><section id="certificates">
+<div class="title">Certificates</div>
+<div class="certificates">
+<img src="certificate1.jpg">
+<img src="certificate2.jpg">
+<img src="certificate3.jpg">
+</div>
+</section><section id="contact">
+<div class="title">Contact</div>
+<div class="contact">
+<p><b>Name:</b> Othman Zaabi</p>
+<p><b>Country:</b> Tunisia</p>
+<p><b>Email:</b> gamerothmen300@email.com</p>
+<p>Available for freelance collaborations and technology projects.</p>
+</div>
+</section><footer>
+<p>© 2026 Othman Zaabi • Developer Portfolio</p>
+</footer><script>
+function scrollContact(){
+ document.getElementById('contact').scrollIntoView({behavior:'smooth'});
+}
+</script></body>
+</html>
